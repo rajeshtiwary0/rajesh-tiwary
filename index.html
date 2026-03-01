@@ -3,62 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rajesh Tiwary | AI-Native Solutions Leader</title>
+<title>Rajesh Tiwary | AI Systems & Agentic Architecture Leader</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --primary: #2563eb;
-  --accent: #1e40af;
-  --text-dark: #0f172a;
-  --text-light: #475569;
-  --bg: #f3f6fb;
-  --card: #ffffff;
-  --border: #e2e8f0;
+  --primary:#1a73e8;
+  --dark:#202124;
+  --muted:#5f6368;
+  --bg:#f8f9fa;
+  --card:#ffffff;
+  --border:#e0e0e0;
 }
 *{box-sizing:border-box}
+body{margin:0;font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);line-height:1.6}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:'Inter',sans-serif;background:var(--bg);color:var(--text-dark)}
 
-nav{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);padding:15px 30px;display:flex;justify-content:space-between;align-items:center;z-index:100}
+nav{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);padding:14px 28px;display:flex;justify-content:space-between;align-items:center;z-index:100}
 nav .logo{font-weight:700;color:var(--primary)}
-nav a{text-decoration:none;margin-left:20px;color:var(--text-light);font-weight:500}
+nav a{text-decoration:none;margin-left:18px;color:var(--muted);font-size:14px}
 nav a:hover{color:var(--primary)}
 
-.resume-wrapper{max-width:1100px;margin:50px auto;background:var(--card);border-radius:18px;box-shadow:0 20px 60px rgba(15,23,42,.08);padding:60px}
+.container{max-width:1100px;margin:40px auto;background:var(--card);padding:60px;border-radius:16px;box-shadow:0 10px 40px rgba(0,0,0,0.06)}
 
 header{text-align:center;margin-bottom:50px}
-h1{font-size:42px;margin:0;font-weight:800}
-.tagline{margin-top:10px;font-size:18px;color:var(--text-light);font-weight:500}
-.contact{margin-top:18px;font-size:14px;color:var(--text-light)}
+h1{font-size:40px;margin:0;font-weight:800}
+.tagline{margin-top:8px;font-size:17px;color:var(--muted);font-weight:500}
+.contact{margin-top:14px;font-size:14px;color:var(--muted)}
 
 .section{margin-bottom:60px}
-.section h2{font-size:18px;letter-spacing:1px;text-transform:uppercase;color:var(--primary);margin-bottom:20px}
+.section h2{font-size:18px;text-transform:uppercase;letter-spacing:1px;color:var(--primary);margin-bottom:18px}
 
-.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
-.metric{border:1px solid var(--border);border-radius:12px;padding:20px;text-align:center}
-.metric h3{margin:0;font-size:24px;color:var(--primary)}
-.metric p{margin-top:8px;font-size:13px;color:var(--text-light)}
+.summary{font-size:15px;color:#3c4043}
 
-.grid{display:grid;grid-template-columns:280px 1fr;gap:50px}
-.sidebar h3{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-top:30px}
-.sidebar p{font-size:14px;color:var(--text-light)}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:20px}
+.metric{border:1px solid var(--border);padding:18px;border-radius:12px;text-align:center}
+.metric h3{margin:0;color:var(--primary);font-size:22px}
+.metric p{margin-top:6px;font-size:13px;color:var(--muted)}
 
-.experience-item{margin-bottom:50px}
-.role{font-weight:700;font-size:18px}
+.layout{display:grid;grid-template-columns:280px 1fr;gap:50px}
+.sidebar h3{font-size:12px;text-transform:uppercase;color:var(--primary);margin-top:28px}
+.sidebar p{font-size:14px;color:var(--muted)}
+
+.role{font-weight:700;font-size:17px}
 .company{font-weight:600;color:var(--primary)}
-.duration{font-size:13px;color:var(--text-light);margin-bottom:10px}
+.duration{font-size:13px;color:var(--muted);margin-bottom:8px}
 ul{padding-left:18px}
-li{margin-bottom:6px}
+li{margin-bottom:7px;font-size:14px}
 
-.case-study{border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:20px}
-.case-study h4{margin:0 0 8px 0;color:var(--primary)}
-.case-study p{margin:0;color:var(--text-light);font-size:14px}
+.case{border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:18px}
+.case h4{margin:0 0 6px 0;color:var(--primary)}
+.case p{margin:0;font-size:14px;color:var(--muted)}
 
-footer{text-align:center;margin-top:60px;font-size:13px;color:var(--text-light)}
+footer{text-align:center;font-size:12px;color:var(--muted);margin-top:50px}
 
-@media print{nav{display:none}body{background:#fff}.resume-wrapper{box-shadow:none;margin:0}}
-@media(max-width:900px){.grid{grid-template-columns:1fr}.resume-wrapper{padding:30px}}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.container{padding:30px}}
+@media print{nav{display:none}.container{box-shadow:none;margin:0}}
 </style>
 </head>
 <body>
@@ -67,81 +67,90 @@ footer{text-align:center;margin-top:60px;font-size:13px;color:var(--text-light)}
 <div class="logo">Rajesh Tiwary</div>
 <div>
 <a href="#summary">Summary</a>
+<a href="#impact">Impact</a>
 <a href="#experience">Experience</a>
-<a href="#case">Case Studies</a>
-<a href="#contact">Contact</a>
+<a href="#projects">Projects</a>
 </div>
 </nav>
 
-<div class="resume-wrapper">
+<div class="container">
 
-<header id="contact">
+<header>
 <h1>Rajesh Tiwary</h1>
-<div class="tagline">AI-Native Solutions Engineering Leader | Agentic Systems Architect | Enterprise Transformation Strategist</div>
-<div class="contact">Bengaluru, India · rajeshtiwary0@gmail.com · +91 98311 11963 · linkedin.com/in/rajesh-tiwary-0</div>
+<div class="tagline">AI Systems Leader | Agentic Architecture | LLM Platforms | Enterprise Automation</div>
+<div class="contact">Bengaluru, India · +91 98311 11963 · rajeshtiwary0@gmail.com · linkedin.com/in/rajesh-tiwary-0</div>
 </header>
 
 <section class="section" id="summary">
 <h2>Executive Summary</h2>
-<p>Solutions Engineering Leader with 10+ years of experience building production-grade automation and Agentic AI systems for enterprise clients across Banking, Healthcare, Logistics, Retail, and Media. Expertise spans Retrieval-Augmented Generation (RAG), Vertex AI / Gemini 2.5 Pro, MCP server orchestration, LangChain.js, enterprise SaaS integrations, and AI-first GTM positioning. Known for combining deep architecture capability with executive storytelling to drive measurable revenue and ROI impact.</p>
+<p class="summary">
+AI-Native Solutions Engineering Leader with 10+ years of experience spanning large-scale distributed systems, enterprise SaaS integrations, and production-grade Agentic AI platforms. Proven track record of architecting LLM-powered systems using RAG, contextual memory, multi-agent orchestration, and MCP server tool-calling frameworks. Delivered tens of millions in influenced revenue, closed the largest enterprise deal in company history, and built scalable enablement ecosystems training 250+ engineers. Combines deep technical architecture with CXO-level communication, GTM strategy, and ROI modeling (5–10x impact delivery).
+</p>
 </section>
 
-<section class="section">
+<section class="section" id="impact">
 <h2>Impact Highlights</h2>
 <div class="metrics">
-<div class="metric"><h3>Largest Deal</h3><p>Closed in company history (UK Enterprise)</p></div>
-<div class="metric"><h3>5–10x ROI</h3><p>Across AI transformation programs</p></div>
-<div class="metric"><h3>250+</h3><p>Engineers trained in Agentic AI</p></div>
-<div class="metric"><h3>85%</h3><p>Underwriting automation via LLM accelerator</p></div>
-<div class="metric"><h3>20%</h3><p>Revenue leakage reduction</p></div>
-<div class="metric"><h3>90%</h3><p>Retail dispute backlog reduction</p></div>
+<div class="metric"><h3>Largest Deal Closed</h3><p>Biggest multi‑million dollar enterprise deal in company history (UK GSI-led engagement)</p></div>
+<div class="metric"><h3>5–10x ROI</h3><p>Documented ROI across Banking, Logistics, and Healthcare AI programs</p></div>
+<div class="metric"><h3>250+ Engineers</h3><p>Certified & enabled on production Agentic AI systems</p></div>
+<div class="metric"><h3>85% Automation</h3><p>Commercial underwriting accelerator using LLM + AI orchestration</p></div>
+<div class="metric"><h3>20% Revenue Recovery</h3><p>Cross-ERP AI reconciliation agents (Salesforce + NetSuite)</p></div>
+<div class="metric"><h3>90% Backlog Reduction</h3><p>Vision-based retail dispute automation (Gemini Vision + MCP)</p></div>
 </div>
 </section>
 
-<section class="section grid" id="experience">
+<section class="section layout" id="experience">
 
 <div class="sidebar">
-<h3>AI & Agentic Systems</h3>
-<p>Multi-Agent Architecture · RAG Pipelines · Vertex AI · Gemini 2.5 Pro · LangChain.js · MCP Servers · Contextual Memory · Prompt Engineering · LLM Evaluation · Vision AI</p>
+<h3>Core AI Stack</h3>
+<p>Vertex AI · Gemini 2.5 Pro · Agentic RAG · LangChain.js · MCP Servers · Tool Calling · Contextual Memory · Prompt Engineering · LLM Evaluation · Vision AI</p>
+
+<h3>Programming</h3>
+<p>Python (TensorFlow, Keras, OpenCV, YOLO) · C#/.NET · JavaScript · REST APIs · Distributed System Design</p>
 
 <h3>Enterprise Platforms</h3>
-<p>UiPath · SAP · Oracle · Coupa · Salesforce · NetSuite · ServiceNow</p>
-
-<h3>Engineering</h3>
-<p>Python (TensorFlow/Keras) · OpenCV/YOLO · C#/.NET · JavaScript · GCP · AWS</p>
+<p>UiPath · SAP · Oracle · Coupa · Ariba · Salesforce · NetSuite · ServiceNow · GCP · AWS</p>
 
 <h3>Certifications</h3>
-<p>Applied Data Science & AI (2025)<br>Build LLM Apps with LangChain.js<br>Advanced NLP with Python</p>
+<p>IIT Delhi – Applied Data Science & AI (2025)<br>
+Build LLM Apps with LangChain.js<br>
+Advanced NLP with Python<br>
+Deep Learning A-Z™<br>
+Artificial Neural Networks</p>
+
+<h3>Languages</h3>
+<p>English · Hindi · Bengali</p>
 
 <h3>Education</h3>
-<p>B.Tech – Computer Science (2015)</p>
+<p>B.Tech, Computer Science – WBUT Kolkata (2015)</p>
 </div>
 
 <div>
 
 <div class="experience-item">
-<div class="role">Solutions Engineering Lead | Advisor to CEO Office</div>
+<div class="role">Solutions Engineering Lead | CEO Office Advisor</div>
 <div class="company">Kognitos</div>
 <div class="duration">Jan 2024 – Present</div>
 <ul>
-<li>Architected and closed the largest multi-million-dollar enterprise deal in company history.</li>
-<li>Designed Agentic AI ecosystems integrating MCP servers, Gemini Vision, contextual RAG, and browser agents.</li>
-<li>Delivered 5–10x ROI across Banking and Logistics transformations.</li>
-<li>Built structured certification program enabling 250+ engineers to build enterprise-grade AI agents.</li>
-<li>Partnered with executive leadership to define AI-first GTM expansion strategy.</li>
+<li>Architected and closed the largest enterprise deal in company history through technical strategy, solution modeling, and executive-level engagement.</li>
+<li>Designed full-stack Agentic AI systems integrating MCP servers, contextual RAG pipelines, Gemini Vision, Browser Agents, and Code Interpreter tools.</li>
+<li>Delivered 5–10x ROI programs across Banking & Logistics via autonomous financial reconciliation and workflow intelligence.</li>
+<li>Built structured certification program enabling 250+ engineers to deploy production-ready AI agents.</li>
+<li>Partnered with CEO Office & Wipro Ventures to expand global partner GTM motions.</li>
 </ul>
 </div>
 
 <div class="experience-item">
-<div class="role">Senior Technical Leader (Dev Lead / Solutions Architect / Consultant)</div>
+<div class="role">Senior Technical Leadership (Dev Lead → Solutions Architect → Presales)</div>
 <div class="company">UiPath</div>
 <div class="duration">July 2018 – Jan 2024</div>
 <ul>
-<li>Led architecture workshops and strategic POCs for Tier-1 banking and global enterprises.</li>
-<li>Direct contributor to multi-million-dollar enterprise revenue closures.</li>
-<li>Built reusable automation accelerators reducing Time-to-Value for Healthcare and Media sectors.</li>
-<li>Designed scalable enterprise automation frameworks and partner governance models.</li>
-<li>Delivered full lifecycle RPA implementations from discovery to hypercare.</li>
+<li>Led architecture design and rapid POCs for Tier‑1 banking and enterprise accounts, influencing tens of millions in revenue.</li>
+<li>Built reusable AI + Automation accelerators reducing Time‑to‑Value for Healthcare & Media customers.</li>
+<li>Directed partner-led implementations, conducting architecture reviews, governance modeling, and scalable framework design.</li>
+<li>Managed specialized solution development teams aligned with GTM expansion strategy.</li>
+<li>Delivered full lifecycle RPA & AI transformation programs from discovery through hypercare.</li>
 </ul>
 </div>
 
@@ -150,9 +159,8 @@ footer{text-align:center;margin-top:60px;font-size:13px;color:var(--text-light)}
 <div class="company">Capgemini</div>
 <div class="duration">June 2017 – June 2018</div>
 <ul>
-<li>Acted as bridge between business stakeholders and engineering teams.</li>
-<li>Conducted automation feasibility studies and led enterprise UAT cycles.</li>
-<li>Introduced AI-enhanced automation using Python NLP and image recognition.</li>
+<li>Bridged business and engineering teams through structured requirement documentation and feasibility modeling.</li>
+<li>Led UAT cycles and introduced AI-enhanced automation using Python NLP and image recognition.</li>
 </ul>
 </div>
 
@@ -161,47 +169,49 @@ footer{text-align:center;margin-top:60px;font-size:13px;color:var(--text-light)}
 <div class="company">Mphasis</div>
 <div class="duration">Aug 2015 – June 2017</div>
 <ul>
-<li>Developed enterprise automation solutions using .NET and C#.</li>
-<li>Delivered cross-platform automation (UiPath, Blue Prism, OpenSpan).</li>
-<li>Built foundational automation frameworks for financial services clients.</li>
+<li>Developed enterprise-grade automation using C#/.NET across UiPath, Blue Prism, and OpenSpan.</li>
+<li>Built foundational reusable automation frameworks for financial services clients.</li>
 </ul>
 </div>
 
 </div>
 </section>
 
-<section class="section" id="case">
-<h2>Transformation Case Studies</h2>
+<section class="section" id="projects">
+<h2>Strategic AI Case Studies</h2>
 
-<div class="case-study">
-<h4>Financial Orchestration Engine</h4>
-<p>Built agentic 3-way invoice matching integrating SAP and Coupa APIs, automating intercompany reconciliation at enterprise scale.</p>
+<div class="case">
+<h4>Autonomous Financial Orchestration Engine</h4>
+<p>Designed agentic 3‑way invoice matching system integrating SAP & Coupa APIs, automating intercompany reconciliation at enterprise scale using contextual memory and multi-tool orchestration.</p>
 </div>
 
-<div class="case-study">
+<div class="case">
 <h4>Revenue Leakage Intelligence Platform</h4>
-<p>Designed cross-system AI agent integrating Salesforce and NetSuite, reducing revenue leakage by ~20%.</p>
+<p>Architected cross‑ERP AI agents monitoring discrepancies between Salesforce and NetSuite, reducing revenue leakage by ~20% and enabling real‑time executive dashboards.</p>
 </div>
 
-<div class="case-study">
-<h4>KYC & AML Underwriting Accelerator</h4>
-<p>Developed LLM-powered accelerator automating ~85% of underwriting checks and reducing onboarding cycles significantly.</p>
+<div class="case">
+<h4>KYC / AML Underwriting Accelerator</h4>
+<p>Built LLM-powered commercial underwriting engine automating ~85% of manual checks, integrating risk analysis workflows with AI-driven document understanding.</p>
 </div>
 
-<div class="case-study">
+<div class="case">
 <h4>Vision-Based Logistics Automation</h4>
-<p>Implemented Gemini Vision-based Bill of Lading extraction system reducing retail dispute backlog by ~90%.</p>
+<p>Implemented Gemini Vision BOL extraction pipeline with MCP-based autonomous tool-calling, reducing retail dispute backlog by ~90%.</p>
 </div>
 
 </section>
 
 <section class="section">
-<h2>Thought Leadership</h2>
-<p>Advocate of AI-first enterprise transformation beyond traditional RPA. Focused on building autonomous, intelligent, self-orchestrating systems that align engineering depth with measurable executive-level outcomes.</p>
+<h2>Innovation & Awards</h2>
+<ul>
+<li>Global Winner – UiPath + AWS Hackathon (Gesture-controlled AI accessibility interface using Computer Vision).</li>
+<li>Phase 1 Winner – OpenCV Hackathon (Edge AI safety alert system using YOLO-based object detection).</li>
+</ul>
 </section>
 
 <footer>
-© 2026 Rajesh Tiwary · Hosted on GitHub Pages
+© 2026 Rajesh Tiwary · AI Systems & Agentic Architecture Leader
 </footer>
 
 </div>
