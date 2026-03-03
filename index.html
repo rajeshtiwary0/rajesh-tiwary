@@ -10,20 +10,28 @@
 :root {
   --blue:#1d4ed8;
   --orange:#f97316;
-  --text:#111827;
-  --muted:#4b5563;
-  --border:#e5e7eb;
+  --orange-soft:#fff4ec;
+  --text:#0f172a;
+  --muted:#475569;
+  --border:#e2e8f0;
 }
 
-body{margin:0;font-family:'Inter',sans-serif;background:#fff;color:var(--text);line-height:1.75}
-.container{max-width:900px;margin:40px auto;padding:60px}
-h1{font-size:36px;margin-bottom:8px}
-h2{font-size:20px;margin-top:55px;color:var(--blue);border-bottom:3px solid var(--orange);padding-bottom:6px}
-h3{font-size:16px;margin-top:25px}
-p,li{font-size:14px;color:var(--muted)}
-ul{padding-left:20px}
-.page-break{page-break-after:always;margin-top:60px}
-@media print{.page-break{page-break-after:always}}
+body{margin:0;font-family:'Inter',sans-serif;background:#f8fafc;color:var(--text);line-height:1.75}
+.container{max-width:1000px;margin:40px auto;padding:60px;background:#ffffff;box-shadow:0 10px 40px rgba(0,0,0,0.05);border-radius:16px}
+h1{font-size:40px;margin-bottom:6px}
+h2{font-size:22px;margin-top:60px;color:var(--blue);position:relative}
+h2:after{content:"";position:absolute;left:0;bottom:-8px;width:60px;height:4px;background:linear-gradient(90deg,var(--blue),var(--orange));border-radius:4px}
+h3{font-size:17px;margin-top:28px;color:var(--text)}
+p{font-size:15px;color:var(--muted)}
+li{font-size:14.5px;color:var(--muted);margin-bottom:6px}
+ul{padding-left:22px}
+.section-card{background:var(--orange-soft);padding:18px 22px;border-radius:12px;margin-top:20px}
+.page-break{page-break-after:always;margin-top:70px}
+@media print{
+  body{background:#fff}
+  .container{box-shadow:none;border-radius:0}
+  .page-break{page-break-after:always}
+}
 </style>
 </head>
 <body>
@@ -36,7 +44,10 @@ ul{padding-left:20px}
 
 <h2>Executive Profile</h2>
 <p>
-Strategic AI Solutions Architect with 10+ years of experience designing distributed automation systems and next-generation Agentic AI platforms. Deep expertise in Retrieval-Augmented Generation (RAG), contextual memory modeling, multi-agent orchestration, MCP server tool-calling, and Vision AI pipelines. Proven ability to translate cutting-edge LLM research into production-grade enterprise systems delivering measurable business outcomes (5–10x ROI). Closed the largest enterprise deal in company history and influenced tens of millions in revenue across global accounts.
+AI Systems & Agentic Architecture Leader with 10+ years of progressive experience spanning traditional Machine Learning, distributed workflow engines, enterprise RPA, and next-generation LLM-powered autonomous systems.
+</p>
+<p>
+Architected and scaled AI platforms across Banking, Insurance, Healthcare, Retail, Logistics, and Global Capability Centers processing millions of transactions annually. Blend deep hands-on ML foundations (TensorFlow, classical ML, Computer Vision, NLP) with modern GenAI ecosystems (RAG, multi-agent orchestration, Azure AI Foundry, AWS Bedrock, SageMaker). Closed the largest enterprise deal in company history and influenced multi-million-dollar AI transformation programs delivering sustained 5–10x ROI.
 </p>
 
 <div class="page-break"></div>
@@ -54,14 +65,17 @@ Strategic AI Solutions Architect with 10+ years of experience designing distribu
 <div class="page-break"></div>
 
 <h2>Impact Highlights</h2>
+<div class="section-card">
 <ul>
-<li>Closed largest multi-million dollar enterprise deal in company history (UK GSI-led engagement).</li>
-<li>Delivered documented 5–10x ROI across Banking, Logistics, and Healthcare AI transformation programs.</li>
-<li>Enabled and certified 250+ engineers on production Agentic AI systems.</li>
-<li>Reduced underwriting manual effort by 85% via LLM-based KYC accelerator.</li>
-<li>Reduced ERP revenue leakage by 20% through cross-system AI reconciliation agents.</li>
-<li>Reduced retail dispute backlog by 90% using Vision AI-driven automation.</li>
+<li>Closed largest multi-million dollar enterprise deal in company history (UK GSI-led engagement) spanning multi-region deployment.</li>
+<li>Delivered documented 5–10x ROI across 15+ enterprise AI transformation programs in Banking, Logistics, Healthcare & Retail.</li>
+<li>Enabled and certified 250+ engineers on production Agentic AI systems deployed across global delivery centers.</li>
+<li>Designed systems processing millions of financial and operational records annually with enterprise-grade reliability.</li>
+<li>Reduced underwriting manual effort by 85% via LLM-based KYC accelerator impacting high-volume BFSI operations.</li>
+<li>Reduced ERP revenue leakage by 20% across large-scale retail order ecosystems.</li>
+<li>Reduced retail dispute backlog by 90% through Vision AI-driven document intelligence automation.</li>
 </ul>
+</div>
 
 <div class="page-break"></div>
 
@@ -105,16 +119,12 @@ Strategic AI Solutions Architect with 10+ years of experience designing distribu
 <li>Developed foundational understanding of workflow orchestration, activity trees, and execution pipelines — significantly strengthening distributed automation architecture expertise.</li>
 </ul>
 
-<h3>Mphasis | RPA Developer (Aug 2015 – June 2017)</h3> | RPA Analyst (June 2017 – June 2018)</h3>
-<ul>
-<li>Gathered and documented enterprise automation requirements; conducted feasibility studies and led UAT cycles.</li>
-<li>Integrated Python NLP and Computer Vision into RPA workflows to enhance automation intelligence.</li>
-</ul>
-
 <h3>Mphasis | RPA Developer (Aug 2015 – June 2017)</h3>
 <ul>
-<li>Developed enterprise automation frameworks using C#/.NET across UiPath, Blue Prism, and OpenSpan platforms.</li>
-<li>Built reusable automation libraries for financial services clients.</li>
+<li>Developed enterprise-grade automation frameworks using C#/.NET across UiPath, Blue Prism, and OpenSpan platforms.</li>
+<li>Designed reusable libraries for financial services clients enabling scalable UI and surface-based automation.</li>
+<li>Built custom exception-handling and logging frameworks improving bot resiliency and observability.</li>
+<li>Strengthened foundational expertise in workflow orchestration, distributed execution models, and enterprise system integrations.</li>
 </ul>
 
 <div class="page-break"></div>
@@ -123,9 +133,9 @@ Strategic AI Solutions Architect with 10+ years of experience designing distribu
 
 <h3>Banking & Financial Services (BFSI) – Intelligent Operations & Risk</h3>
 <ul>
-<li><strong>KYC / AML Underwriting Accelerator:</strong> Designed LLM-powered underwriting co-pilot leveraging RAG over regulatory guidelines, historical credit policies, and case notes. Enabled autonomous document validation, anomaly detection, and risk summarization — reducing manual effort by ~85% and improving turnaround time by 60%.</li>
-<li><strong>Agentic Dispute Resolution Engine:</strong> Built multi-agent system to investigate card disputes and chargebacks by orchestrating CRM, core banking, and transaction logs. Used contextual memory + tool-calling to auto-draft resolution notes and compliance-ready summaries.</li>
-<li><strong>Predictive Collections Intelligence:</strong> Integrated traditional ML propensity models (SageMaker/DataRobot) with GenAI call-summary agents to optimize outreach strategies and reduce delinquency rates.</li>
+<li><strong>KYC / AML Underwriting Accelerator:</strong> Designed LLM-powered underwriting co-pilot leveraging RAG over regulatory guidelines, historical credit policies, and 100K+ archived case notes. Reduced manual effort by ~85% and improved turnaround time by 60% across high-volume underwriting teams.</li>
+<li><strong>Agentic Dispute Resolution Engine:</strong> Built multi-agent system orchestrating CRM, core banking, and transaction logs handling thousands of monthly disputes. Contextual memory + tool-calling enabled autonomous investigation summaries and compliance-ready outputs.</li>
+<li><strong>Predictive Collections Intelligence:</strong> Combined traditional ML propensity models (SageMaker/DataRobot) with GenAI call summarization agents, increasing collections efficiency and optimizing outreach prioritization strategies.</li>
 </ul>
 
 <h3>Insurance – Claims & Policy Servicing Automation</h3>
@@ -136,8 +146,9 @@ Strategic AI Solutions Architect with 10+ years of experience designing distribu
 
 <h3>Healthcare & Life Sciences – Revenue Cycle & Prior Authorization</h3>
 <ul>
-<li><strong>Prior Authorization Automation:</strong> Built RAG-enabled agent reading payer rules and EMR notes to auto-populate authorization forms and generate medical justification narratives.</li>
-<li><strong>Revenue Cycle Intelligence:</strong> Developed denial prediction ML models combined with LLM-based root cause summarization to reduce claim rejection rates and accelerate reimbursements.</li>
+<li><strong>Prior Authorization Automation:</strong> Built RAG-enabled agent reading payer rules and EMR notes to auto-populate authorization forms and generate medical justification narratives at scale across large provider networks.</li>
+<li><strong>Revenue Cycle Intelligence:</strong> Developed denial prediction ML models combined with LLM-based root cause summarization reducing claim rejection rates and accelerating reimbursements across high-transaction billing environments.</li>
+<li><strong>Clinical Documentation Co-Pilot:</strong> Designed secure GenAI assistant for summarizing physician notes and structuring them for billing compliance while maintaining HIPAA-aligned guardrails.</li>
 </ul>
 
 <h3>Retail & CPG – Order Management & Dispute Reduction</h3>
